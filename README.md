@@ -1,2 +1,2 @@
 # Homeworks
-## [Homework_03](/homeworks/homework_lecture_3.txt)
+## [Homework_03](/homework_lecture_3.txt)
