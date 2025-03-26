@@ -37,49 +37,58 @@ Status: PASS / FAIL
 
 -----------------------------------
 
-TS.1. 
-TC.1.1. Enter the page 
+TS.1. To do list page
+
+TC.1.1. elements are visible
 (first TC always must be positive)  
 * 1. Open the page
+* 2. Observe heder - expected 'To Do List'
+* 3. Observe footer - expected 'Double-click to edit a todo'
+* 4. Observe task input field - expected visible
+* 5. Observe task input placeholder - (What need's to be done?)
 
 
-Expected result: Open main page     
-Actual result:  
-Status: PASS / FAIL
+Expected result: as described   
+Actual result: footer, misspelling in 'Double-click to edit a toodo'    
+Status:  FAIL
 
+TS.2  Create task
 
-
-TC.1.2. Adding new task
-* 1. Click on the input field to add a new item
-* 2. Write a new item
+TC.2.1. Adding new task
+* 1. Open application
+* 2. Input task name ('reed the book')
 * 3. Press 'Enter'
   
 
-Expected result:   new item should appear in list and in counter show how many items left   
+Expected result:   new item in the list 'reed the book' 
 Actual result:  
-Status: PASS / FAIL
+Status: PASS
 
-TC.1.3. Adding empty task
-* 1. Click on the input field to add a new item
-* 2. No to write new item
+TC.2.2. Adding empty task
+* 1.  Open application
+* 2. Input task empty
 * 3. Press Enter
   
 
-Expected result:   empty item should't appear in list 
+Expected result:   empty item should't appear in the list 
 Actual result:  
-Status: PASS / FAIL
+Status: PASS 
 
-
-TC.1.4. Adding two tasks
-* 1. Click on the input field to another one new item
-* 2. Write a new item
+TC.2.3. Adding task with space
+* 1.  Open application
+* 2. Input task name (add some space without text)
 * 3. Press Enter
   
-Expected result:   another one task should appear in list   
-Actual result:  
-Status: PASS / FAIL
 
-TC.1.5. Editing existing item
+Expected result:   item should't appear in the list     
+Actual result:  
+Status: PASS 
+
+
+
+TS.3 Edit task
+
+TC.3.1. Editing existing item
 * 1. Double click on the item 
 * 2. Change the text
 * 3. Press Enter
@@ -87,6 +96,8 @@ TC.1.5. Editing existing item
 Expected result: the item text should update to the new value in the list.  
 Actual result:  
 Status: PASS / FAIL
+
+TS.4 Delete task
 
 TC.1.6. Removing items
 * 1. Click on item line
@@ -132,6 +143,7 @@ TC.1.10. Filter items as 'Active'
 Expected result: in the list should show just all left to do items
 Actual result:  
 Status: PASS / FAIL
+
 
 TC.1.11. Filter items as 'Completed'
 * 1.  Write a few tasks in list and mark few of them as completed and few as left to do
