@@ -12,6 +12,11 @@
 	1.1 - todo-count - shows wrong information;
 	1.2 - btn active - lowercase letter
 	1.3 - adaptation - no adaptation for small screen
+	1.4 - footer - double click with mistakes
+	1.5 - errors in devtools
+	1.6 - empty space '  ' in creating line
+
+
 
 
 2.Github repository done.
